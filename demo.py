@@ -1,5 +1,4 @@
 import urllib.request
-from bs4 import BeautifulSoup
 import json
 
 results_page = 'https://public.rts.iebc.or.ke/enr/index.html#/Kenya_Elections_Presidential/1'
