@@ -36,8 +36,18 @@ with open('first_list', 'w') as outfile:
 
 ## read counties data
 for item in dataOne:
-	county_index = item[0]
-	print(county_index)
+	county_index = str(item[0])
+	countyName = item[1];
+
+	strOne = 'https://public.rts.iebc.or.ke/jsons/round1/results/Kenya_Elections_Presidential%2F1%2F'
+	strTwo = '/info.json'
+	countyElectionLink =  strOne + county_index +strTwo
+
+	# read data from individual pages
+	countyPage = urllib.request.urlopen(countyElectionLink).read()
+	countyData = json.loads(countyPage)
+	with open(countyName, 'w') as outputFileData:
+		json.dump(countyData, outputFileData, ensure_ascii=False, indent=4)
 
 
 #election_info = 'https://public.rts.iebc.or.ke/jsons/round1/results/Kenya_Elections_Presidential%2F1%2F1030/info.json';
