@@ -1,0 +1,23 @@
+{
+  "name": "iebc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ajax.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trendy-weshy/iebcdata.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trendy-weshy/iebcdata/issues"
+  },
+  "homepage": "https://github.com/trendy-weshy/iebcdata#readme",
+  "dependencies": {
+    "request-json": "^0.6.2"
+  }
+}
