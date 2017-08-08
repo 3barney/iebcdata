@@ -49,7 +49,7 @@ for item in dataOne:
 	if (countyName == 'ELGEYO/MARAKWET'):
 		countyName = 'ELGEYO - MARAKWET'
 
-	with open(countyName, 'w') as outputFileData:
+	with open(countyName+ '.json', 'w') as outputFileData:
 		json.dump(countyData, outputFileData, ensure_ascii=False, indent=4)
 
 
