@@ -1,0 +1,28 @@
+{
+  "name": "@iebc/browser",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "webpack-dev-server --inline --host 0.0.0.0 --port 8080"
+  },
+  "keywords": [],
+  "author": "",
+  "description": "",
+  "devDependencies": {
+    "css-loader": "^0.28.4",
+    "file-loader": "^0.11.2",
+    "source-map-loader": "^0.2.1",
+    "style-loader": "^0.18.2",
+    "ts-loader": "^2.3.2",
+    "typescript": "^2.4.2",
+    "webpack": "^3.5.1",
+    "webpack-dev-server": "^2.7.1"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "rx-dom": "^7.0.3",
+    "rxjs": "^5.4.2"
+  }
+}
