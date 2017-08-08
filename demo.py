@@ -45,7 +45,11 @@ for item in dataOne:
 	# read data from individual pages
 	countyPage = urllib.request.urlopen(countyElectionLink).read()
 	countyData = json.loads(countyPage)
-	with open(countyName, 'w') as outputFileData:
+	
+	if (countyName == 'ELGEYO/MARAKWET'):
+		countyName = 'ELGEYO - MARAKWET'
+
+	with open(countyName+ '.json', 'w') as outputFileData:
 		json.dump(countyData, outputFileData, ensure_ascii=False, indent=4)
 
 
